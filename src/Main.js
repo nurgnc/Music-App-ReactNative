@@ -5,7 +5,7 @@ import musicData from './data/music-data.json'
 
 const Main = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <FlatList
                 data={musicData}
                 renderItem={({ item }) =>
@@ -18,4 +18,8 @@ const Main = () => {
 
 export default Main
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    }
+})
